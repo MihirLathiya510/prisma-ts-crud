@@ -12,6 +12,7 @@
     "test:watch": "jest --coverage --watch",
     "start": "npx ts-node src/index.ts",
     "devStart":"nodemon script.ts",
+    "devMigrate": "npx prisma migrate dev",
     "build": "rm -rf dist && npx tsc",
     "lint": "eslint --ignore-path .eslintignore --ext .js,.ts ."
   },
