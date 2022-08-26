@@ -1,0 +1,34 @@
+{
+  "name": "JestTestCases",
+  "version": "1.0.0",
+  "description": "playing with ts-jest",
+  "main": "index.js",
+  "repository": "git@github.com:MihirLathiya510/JestTestCases.git",
+  "author": "mihir",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --coverage --watch",
+    "start": "npx ts-node src/index.ts",
+    "build": "rm -rf dist && npx tsc",
+    "lint": "eslint --ignore-path .eslintignore --ext .js,.ts ."
+  },
+  "type": "module",
+  "devDependencies": {
+    "@types/jest": "^28.1.8",
+    "@types/node": "^18.7.13",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.35.1",
+    "eslint": "^8.0.1",
+    "eslint-config-standard-with-typescript": "^22.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "ts-jest": "^28.0.8",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.4.0",
+    "typescript": "*"
+  },
+  "dependencies": {}
+}
