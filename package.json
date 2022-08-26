@@ -11,6 +11,7 @@
     "test:coverage": "jest --coverage",
     "test:watch": "jest --coverage --watch",
     "start": "npx ts-node src/index.ts",
+    "devStart":"nodemon script.ts",
     "build": "rm -rf dist && npx tsc",
     "lint": "eslint --ignore-path .eslintignore --ext .js,.ts ."
   },
@@ -25,10 +26,12 @@
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-n": "^15.0.0",
     "eslint-plugin-promise": "^6.0.0",
+    "prisma": "4.2.1",
     "ts-jest": "^28.0.8",
     "ts-node": "^10.9.1",
     "tslib": "^2.4.0",
-    "typescript": "*"
-  },
-  "dependencies": {}
+    "typescript": "*",
+    "@prisma/client": "^4.2.1",
+    "nodemon": "^2.0.19"
+  }
 }
