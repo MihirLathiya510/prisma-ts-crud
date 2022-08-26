@@ -8,7 +8,7 @@ async function main() {
       id: 7,
     },
   }); // delete
-  await prisma.user.findMany(); // update
+  await prisma.user.findMany(); // print all
   await prisma.user.update({
     where: {
       id: 5,
